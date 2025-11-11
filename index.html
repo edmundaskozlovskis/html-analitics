@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analitics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/analitics.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="top-block">
+        <button onclick="sidebarMenu()"><i class="fa fa-bars" aria-hidden="true"></i> Menu</button>
+        <span>Logo</span>
+    </div>
+    <div class="nav hide-sidebar" id="mySidebar">
+        <div class="avatar-block">
+            <div>
+                <img width="46" height="46" src="images/avatar2.png" alt="Avatar image">
+            </div>
+            <div class="avatar-block_icons">
+                <span>Welcome, <strong>Edmundas</strong></span>
+                <br>
+                <a href="#">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-cog"></i>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="dashboard">
+            <h5>Dashboard</h5>
+            <a href="#">
+                <i class="fa fa-remove fa-fw"></i> Overview
+            </a>
+            <a href="#">
+                <i class="fa fa-remove fa-fw"></i> Overview
+            </a>
+            <a href="#">
+                <i class="fa fa-remove fa-fw"></i> Overview
+            </a>
+            <a href="#">
+                <i class="fa fa-remove fa-fw"></i> Overview
+            </a>
+            <a href="#">
+                <i class="fa fa-remove fa-fw"></i> Overview
+            </a>
+            <a href="#">
+                <i class="fa fa-remove fa-fw"></i> Overview
+            </a>
+            <a href="#">
+                <i class="fa fa-remove fa-fw"></i> Overview
+            </a>
+            <a href="#">
+                <i class="fa fa-remove fa-fw"></i> Overview
+            </a>
+            <a href="#">
+                <i class="fa fa-remove fa-fw"></i> Overview
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        
+    </div>
+    <script>
+        function sidebarMenu() {
+            let sidebar = document.getElementById('mySidebar')
+            
+            if (sidebar.className == 'nav hide-sidebar') {
+                sidebar.className = 'nav'
+            }
+            else {
+                sidebar.classList = 'nav hide-sidebar'
+            }
+        }
+    </script>
+</body>
+</html>

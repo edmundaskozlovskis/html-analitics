@@ -21,15 +21,26 @@ body {
     line-height: 1.5;
 }
 .nav {
-    margin-top: 50px;
+    position: fixed;
+    left: 0;
+    top: 44px;
+    height: 100vh;
+    padding-top: 18px;
     width: 300px;
     background-color: #fff;
-    height: 100vh;
 }
+.nav hr {
+    border: none;
+    border-top: solid 1px;
+    margin: 20px 0;
+} 
 .avatar-block {
     display: flex;
     padding: 0 16px;
     gap: 20px;
+}
+.avatar-block_avatar img {
+    border-radius: 50%;
 }
 .avatar-block_icons a {
     color: #000;
@@ -39,14 +50,81 @@ body {
 }
 .avatar-block_icons a:hover {
     background-color: #ccc;
-} 
+}
+/* .dashboard {
+    padding: 0 16px;
+}  */
+.dashboard h5 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0;
+    padding: 0 16px;
+}
 .dashboard a {
     display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.dashboard a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+.dashboard .active {
+    background-color: #2196F3;
+    color: #fff;
 }
 .main {
-    height: 1000px;
-    background-color: aqua;
+    margin-left: 300px;
+    margin-top: 43px;
+    padding: 16px;
+    background-color: #f1f1f1;
 }
+.main h5 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0;
+} 
+.main-dashbord_top {
+    display: flex;
+    gap: 16px;
+    color: #fff;
+}
+.main-dashbord_top .main-dashbord_box:first-child {
+    background-color: #f44336;
+}
+.main-dashbord_top .main-dashbord_box:last-child {
+    background-color: #ff9800;
+}
+.main-dashbord_top .main-dashbord_box:nth-child(2) {
+    background-color: #2196F3;
+}
+.main-dashbord_top .main-dashbord_box:nth-child(3) {
+    background-color: #009688;
+}
+.main-dashbord_box {
+    padding: 16px;
+    width: 25%;
+}
+.main-dashbord_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-dashbord_text i {
+    font-size: 48px;
+}
+.main-dashbord_text h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+.main-dashbord_box h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
 @media screen and (max-width: 990px) {
   .top-block button {
     display: block;
